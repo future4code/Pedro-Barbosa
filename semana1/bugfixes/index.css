@@ -119,11 +119,11 @@ td button {
     height: 100px;
 }
 
-.buy-button:hover {
+td button:hover {
 background-color: #ffaf43;
 }
 
-.buy-button:active {
+td button:active {
     background-color: blueviolet;
 }
 
