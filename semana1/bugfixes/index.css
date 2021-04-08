@@ -28,15 +28,9 @@ button:focus {
 
 img {
     width: 50px;
+    
 }
 
-div>p:first-child {
-    display: inline;
-}
-
-div img {
-    background: black;
-}
 
 .container {
     height: 360px;
