@@ -38,17 +38,15 @@ div img {
     background: black;
 }
 
-
-
 .container {
-    height: 500px;
+    height: 360px;
     text-align: center;
+    font-family: calibri
 }
 
 .icone {
     height: 15px;
 }
-
 
 /** 
   *
@@ -68,16 +66,17 @@ div img {
 
 #container-de-descricao>ol {
     padding: 15px 100px;
-    width: 250px;
+    width: 280px;
     margin: auto;
 }
 
-
 #container-para-comprar {
+    padding-top: 100px;
     color: #c44f00;
     background-color: #e7eb90;
-    font-size: 40px;
-    height: 500px;
+    font-size: 55px;
+    height: 360px;
+    font-weight: 600;
 }
 
 #botao-amarelo {
@@ -85,14 +84,14 @@ div img {
     width: 250px;
     height: 45px;
     border-radius: 5px;
-    font-size: 40px;
+    font-size: 20px;
     color: white;
+    margin-top: 80px;
 }
 
 #botao-amarelo:hover {
     background-color: #c44f00;
 }
-
 
 /**
   *
@@ -100,8 +99,7 @@ div img {
   *
   **/
 
-div:nth-child(2),
-div:last-child {
+div:nth-child(2), div:last-child {
     text-align: center;
 }
 
@@ -121,7 +119,6 @@ td button {
     margin-top: 20px;
     height: 100px;
 }
-
 
 #back-button {
     background-color: white;
