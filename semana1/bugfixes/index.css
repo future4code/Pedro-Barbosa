@@ -119,6 +119,15 @@ td button {
     height: 100px;
 }
 
+
+.buy-button:hover {
+background-color: #ffaf43;
+}
+
+.buy-button:active {
+    background-color: blueviolet;
+}
+
 #back-button {
     background-color: white;
     width: 100px;
@@ -131,4 +140,8 @@ td button {
 
 #back-button:hover {
     background-color: #635a3d
+}
+
+#back-button:active {
+    background-color: blueviolet;
 }
