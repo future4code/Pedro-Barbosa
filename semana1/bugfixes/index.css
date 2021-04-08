@@ -146,7 +146,9 @@ background-color: #ffaf43;
 }
 
 #search-border {
+    border-color: black;
     border-left:none;
     border-right:none;
     border-top:none;
+    border-width: 2px;
 }
