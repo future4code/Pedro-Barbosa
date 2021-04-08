@@ -37,18 +37,7 @@ div img {
     background: black;
 }
 
-.botao-amarelo {
-    background-color: #ffaf43;
-    width: 250px;
-    height: 40px;
-    border-radius: 5px;
-    font-size: 20px;
-    color: white;
-}
 
-.botao-amarelo:hover {
-    background-color: #c44f00;
-}
 
 .container {
     height: 500px;
@@ -76,13 +65,23 @@ div img {
 }
 
 #container-para-comprar {
+    color: #c44f00;
     background-color: #e7eb90;
+    font-size: 40px;
+    height: 500px;
 }
 
-#container-para-comprar>p {
-    color: #c44f00;
-    padding: 100px 0;
-    font-size: 60px;
+#botao-amarelo {
+    background-color: #ffaf43;
+    width: 250px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 40px;
+    color: white;
+}
+
+#botao-amarelo:hover {
+    background-color: #c44f00;
 }
 
 
