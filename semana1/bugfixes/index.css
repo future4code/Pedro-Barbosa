@@ -27,7 +27,7 @@ button:focus {
 }
 
 img {
-    width: 100px;
+    width: 50px;
 }
 
 div>p:first-child {
@@ -99,12 +99,17 @@ div img {
   *
   **/
 
-div:nth-child(2), div:last-child {
+div {
     text-align: center;
+    font-family: calibri;
 }
 
 table {
     width: 60%;
+    margin:auto;
+    line-height: 0;
+    font-size: 23px;
+    font-weight: 600;
 }
 
 td button {
