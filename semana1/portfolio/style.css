@@ -10,17 +10,30 @@ header h2 {
     margin-top: 0;
 }
 
-a {
+footer {
+    text-align: center;
+}
+
+footer img {
+    margin-top: 20px;
+    width: 50px;
+}
+
+footer a {
+    color: white;
+}
+
+table a {
     text-decoration: none;
     color: black;
 }
 
-a:hover {
+table a:hover {
     color: white;
     background-color: black;
 }
 
-a:active {
+table a:active {
     color: purple;
 }
 
@@ -32,6 +45,13 @@ main h3 {
 }
 
 main h4 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 30px;
+}
+
+main h5 {
     margin-top: 100px;
     text-align: center;
     font-size: 30px;
@@ -63,8 +83,8 @@ article li {
     margin-bottom: 15px;
 }
 
-#formatacao-li-proj {
-    font-size: 25px;
+#formatacao-galeria {
+    font-size: 30px;
 }
 
 #formatacao-tabela {
@@ -79,7 +99,66 @@ article li {
 .galeria img {
     margin: 5px;
     border: 1px solid black;
-   
+    border-radius: 20px;
     width: 800px;
-  }
- 
+}
+
+form {
+    text-align: center;
+    height: 450px;
+}
+
+#mensagem {
+    height: 150px;
+}
+
+input[type=text], input[type=email], textarea {
+    width: 30%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    text-align: start;
+}
+
+button {
+    border: none;
+    font-size: 20px;
+    background-color: rgb(177, 196, 231);
+    border-radius: 5px;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+}
+
+button:active {
+    color: purple;
+}
+
+nav img {
+    width: 400px;
+    margin-top: 100px;
+    border-radius: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+a {
+    text-align: center;
+    height: 500px;
+    margin:auto;
+}
+
+nav a {
+    color: white;
+}
+
+nav a:hover {
+    background-color: white;
+}
+
+nav table {
+    margin: auto;
+    text-align: center;
+} 
