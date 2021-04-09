@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Venda</title>
+</head>
+
+<body>
+    <h1 class="cabeçalho">PEDIN'S STORE</h1>
+
+    <div>
+        <a href="index.html">Página Inicial</a>
+        <a href="ctrl-estoque.html">Controle de Estoque</a>
+        <a href="add-produto.html">Adicionar Produto</a>
+        <a href="funcionarios.html">Funcionários</a>
+        <a href="venda.html">Venda</a>
+        <a href="hist-venda.html">Histórico de Vendas</a>
+    </div>
+   
+<h2>Venda</h2>
+
+<form action="venda.html">
+    <label for="produto">Escolha o produto:</label>
+    <select id="produto" name="produto">
+      <option value="alcoolgel">Álcool Gel</option>
+      <option value="fitaisolante">Fita Isolante</option>
+      <option value="desodorante">Desodorante</option>
+      <option value="papeltoalha">Papel Toalha</option>
+      <option value="estilete">Estilete</option>
+    </select>
+
+    <div>
+        <label for="quantidadeprod">Digite a quantidade do produto </label>
+        <input type="number" id="quantidadeprod" name="quantidade">
+    </div>
+    <button class="botao" type="submit">Adicionar produto</button>
+    <br>
+    <br>
+
+    <label for="pagamento">Escolha a opção de pagamento:</label>
+    <select id="pagamento" name="pagamento">
+        <option value="dinheiro">Dinheiro</option>
+        <option value="cartao">Cartão</option>
+    </select>
+    <br>
+    <button class="botao" type="submit">Pagar</button>
+  </form>
+
+    <h3 class="rodape"> Made by Pedin™</h3>
+</body>
+
+</html>
