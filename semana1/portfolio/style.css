@@ -1,0 +1,54 @@
+* {
+    font-family: 'Montserrat';
+    
+}
+
+header {
+
+    font-size: 30px;
+}
+
+header h2 {
+margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: white;
+    background-color: black;
+}
+
+a:active {
+    color: purple;
+}
+
+main h3 {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+main h4 {
+    margin-top: 200px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#formatacao-li-proj {
+font-size: 25px;
+}
+
+#formatacao-tabela {
+padding-left: 30px;
+}
+
+.pagina-atual {
+    color: white;
+    background-color: black;
+}
+
