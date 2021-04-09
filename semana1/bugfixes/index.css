@@ -1,0 +1,162 @@
+/** 
+  *
+  *  ESTILOS GERAIS 
+  *
+  **/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fe7e02;
+    padding: 10px 5px 10px 5px;
+    color: white;
+    text-align: center;
+}
+
+input {
+    height: 20px;
+    width: 500px;
+}
+
+button:focus {
+    color: white;
+}
+
+img {
+    width: 50px;
+    
+}
+
+
+.container {
+    height: 360px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.icone {
+    width: 20px;
+}
+
+.icone:hover {
+    opacity: 0.5;
+}
+
+.icone:active {
+    opacity: 1;
+}
+
+/** 
+  *
+  *  ESTILOS HOME 
+  *
+  **/
+
+#container-de-descricao {
+    padding-top: 80px;
+    background-color: #2274a5;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+#container-de-descricao>ol {
+    padding: 15px 100px;
+    width: 280px;
+    margin: auto;
+}
+
+#container-para-comprar {
+    padding-top: 100px;
+    color: #c44f00;
+    background-color: #e7eb90;
+    font-size: 55px;
+    height: 360px;
+    font-weight: 600;
+}
+
+#botao-amarelo {
+    background-color: #ffaf43;
+    width: 250px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    margin-top: 80px;
+}
+
+#botao-amarelo:hover {
+    background-color: #c44f00;
+}
+
+/**
+  *
+  *  ESTILOS COMPRAR 
+  *
+  **/
+
+div {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+table {
+    width: 60%;
+    margin:auto;
+    line-height: 0;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+td button {
+    background-color: #fadf63;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    color: black;
+}
+
+.container-do-search {
+    margin-top: 20px;
+    height: 100px;
+}
+
+td button:hover {
+background-color: #ffaf43;
+}
+
+td button:active {
+    background-color: blueviolet;
+}
+
+#back-button {
+    background-color: white;
+    width: 100px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 10px;
+    color: black;
+}
+
+#back-button:hover {
+    background-color: #635a3d
+}
+
+#back-button:active {
+    background-color: blueviolet;
+}
+
+#search-border {
+    border-color: black;
+    border-left:none;
+    border-right:none;
+    border-top:none;
+    border-width: 2px;
+}
