@@ -1,15 +1,13 @@
 * {
     font-family: 'Montserrat';
-    
 }
 
 header {
-
     font-size: 30px;
 }
 
 header h2 {
-margin-top: 0;
+    margin-top: 0;
 }
 
 a {
@@ -34,17 +32,43 @@ main h3 {
 }
 
 main h4 {
-    margin-top: 200px;
+    margin-top: 100px;
     text-align: center;
     font-size: 30px;
 }
 
+.biografia {
+    text-align: left;
+    width: 60%;
+    margin: auto;
+}
+
+.intro-art {
+    text-align: center;
+}
+
+article p {
+    font-size: 20px;
+}
+
+#imagem-bio img {
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+article li {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
 #formatacao-li-proj {
-font-size: 25px;
+    font-size: 25px;
 }
 
 #formatacao-tabela {
-padding-left: 30px;
+    padding-left: 30px;
 }
 
 .pagina-atual {
@@ -52,3 +76,10 @@ padding-left: 30px;
     background-color: black;
 }
 
+.galeria img {
+    margin: 5px;
+    border: 1px solid black;
+   
+    width: 800px;
+  }
+ 
