@@ -1,0 +1,117 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    color: white;
+}
+
+.green-background {
+    display: grid;
+    background-color: green;
+    justify-items: center;
+    align-items: center;
+}
+
+.yellow-background {
+    display: grid;
+    background-color: yellow;
+    justify-items: center;
+    align-items: center;
+}
+
+.pink-background {
+    background-color: fuchsia;
+    display: grid;
+    grid-column: 1 / 3;
+    grid-row: 2/ 3;
+    justify-items: center;
+    align-items: center;
+}
+
+.blue-background {
+    display: grid;
+    background-color: blue;
+    justify-items: center;
+    align-items: center;
+}
+
+#content2 {
+    display: grid;
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+}
+
+.red-background {
+    display: grid;
+    background-color: red;
+    justify-items: center;
+    align-items: center;
+}
+
+.lightgreen-background {
+    display: grid;
+    background-color: lightgreen;
+    justify-items: center;
+    align-items: center;
+}
+
+.purple-background {
+    display: grid;
+    background-color: purple;
+    justify-items: center;
+    align-items: center;
+}
+
+#main-container {
+    display: grid;
+    grid-template-rows: 50px 550px 250px 87px;
+    grid-template-columns: 50% 50%;
+}
+
+#top-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+#middle-container {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+
+#blank {
+    display: grid;
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+}
+
+#vertical-middle-container {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+}
+
+#image {
+    display: grid;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+#extra {
+    display: grid;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+#main-container div:nth-of-type(4) {
+    display: grid;
+    grid-column: 1 / 3;
+    grid-row: 4/ 5;
+}
