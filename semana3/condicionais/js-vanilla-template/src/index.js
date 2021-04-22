@@ -263,4 +263,3 @@ if (etapaDoJogo === "sf" && categoria === 1 && tipoDeJogo === "do") {
 } else if (etapaDoJogo === "fi" && categoria === 4 && tipoDeJogo === "in") {
     console.log(`Valor Total: U$ ${(fiCategoria4 / 4.10) * quantidadeDeIngressos}`)
 }
-
