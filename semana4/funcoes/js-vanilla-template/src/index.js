@@ -144,7 +144,7 @@ function quantidadeNumPar(array) {
 const contagem1 = quantidadeNumPar(array)
 console.log(contagem1)
 
-Desafios
+// Desafios
 
 // 1.
 
