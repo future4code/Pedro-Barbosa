@@ -6,7 +6,7 @@ function adicionarTarefa() {
     let horarioDoDia = document.getElementById("horas-do-dia").value
 
     if (tarefaLista !== "") {
-        document.getElementById(diaDaSemana).innerHTML += `<li onclick='riscaTexto(this)'>${tarefaLista} às ${horarioDoDia}</li>`
+        document.getElementById(diaDaSemana).innerHTML += `<p onclick='riscaTexto(this)'> - ${tarefaLista} às ${horarioDoDia}</p>`
 
         document.getElementById("tarefa").value = ""
     } else {
@@ -20,7 +20,7 @@ function riscaTexto(textoinserido){
 }
 
 function limparTudo() {
-    let listas = document.getElementsByTagName("li")
+    let listas = document.getElementsByTagName("p")
     for (let limpeza of listas) {
         limpeza.innerHTML = ""
     }

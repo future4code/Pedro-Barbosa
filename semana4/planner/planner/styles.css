@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+p {
+    font-size: 1vw;
+}
+
 header {
     height: 10vh;
     display: flex;
@@ -23,3 +27,65 @@ section {
     padding: 5px;
 }
 
+@media screen and (max-device-width : 420px) {
+
+header {
+    display: grid;
+    height: 50vh;
+    width: 100vw;
+    justify-content: inherit;
+    align-items: center;
+    font-size: 6vw;
+}
+
+p {
+    font-size: 5vw;
+}
+
+label {
+    padding-left: 5vw;
+}
+
+input#tarefa {
+    display: flex;
+    height: 3.5vh;
+    width: 80%;
+    margin: auto;
+}
+
+select {
+    display: flex;
+    height: 3.5vh;
+    width: 60%;
+    margin: auto;
+}
+
+button {
+    display: flex;
+    height: 3.5vh;
+    width: 60%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    font-size: 4.5vw;
+}
+
+section h3 {
+    padding-bottom: 2vh;
+}
+
+.semana {
+    border: none;
+    width: 100%;
+    padding: 3vh;
+    height: 50%;
+}
+    
+}
