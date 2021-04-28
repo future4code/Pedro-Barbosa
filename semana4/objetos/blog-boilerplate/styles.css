@@ -22,7 +22,7 @@ form {
 
 label {
     width: 10%;
-    text-align: right;
+    text-align: center;
     padding-right: 10px;
     margin-bottom: 10px;
 }
@@ -44,8 +44,24 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 10px;
-    border-top: 3px double rgb(77, 77, 77);
     text-align: center;
-    
+    margin: auto;
 }
+
+div p {
+    margin: 30px;
+}
+
+div {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+img {
+    width: 350px;
+    height: 350px;
+    margin: auto
+}
+
