@@ -8,6 +8,8 @@ function imprimirDespesas(despesas) {
     let divDespesas = document.getElementById('despesas')
     divDespesas.innerHTML = '<p><u>Despesas Detalhadas</u></p>'
 
+    despesas.sort((despesas1, despesas2) => despesas2.valor - despesas1.valor);
+    console.log(despesas)
     despesas.map((despesa) => {
         divDespesas.innerHTML += `<p> Valor: R$${despesa.valor} | Tipo: ${despesa.tipo} | Descrição: ${despesa.descricao} </p>`
     })
@@ -79,12 +81,10 @@ function adicionarDespesa() {
 
 // TERCEIRO
 function filtrarDespesas() {
-    let tipoFiltroFiltro = document.getElementById('tipoFiltro')
     let tipoFiltro = document.getElementById('tipoFiltro').value
     let valorMin = Number(document.getElementById('valorFiltroMin').value)
     let valorMax = Number(document.getElementById('valorFiltroMax').value)
 
-    console.log(tipoFiltro.value)
 
 
     let despesasFiltradas = arrDespesas.filter((despesa) => {
@@ -93,7 +93,7 @@ function filtrarDespesas() {
         }
 
     })
-    if (tipoFiltroFiltro == "" || tipoFiltroFiltro == null, valorMin == "" || valorMin == null, valorMax == "" || valorMax == null, valorMin <= 0 || valorMax <= 0 ){ 
+    if (tipoFiltro == "" || tipoFiltro == null, valorMin == "" || valorMin == null, valorMax == "" || valorMax == null, valorMin <= 0 || valorMax <= 0 ){ 
         alert("Todos os campos devem ser preenchidos e os valores maiores do que 0!")
     } else if (valorMax <= valorMin) {
         alert("O valor mínimo deve ser menor que o valor máximo!")
