@@ -96,7 +96,17 @@ function retornaNNumerosPares(n) {
 // Exercício 8
 
 function checaTriangulo(a, b, c) {
-   // implemente sua lógica aqui
+
+   let ValorTriangulo 
+
+   if (a === b && a === c) {
+      ValorTriangulo = "Equilátero"
+   } else if (a === b && a !== c) {
+      ValorTriangulo = "Isósceles"
+   } else {
+      ValorTriangulo = "Escaleno"
+   }
+   return ValorTriangulo
 }
 
 // Exercício 9
