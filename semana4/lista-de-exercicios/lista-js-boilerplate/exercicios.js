@@ -338,7 +338,7 @@ const consultasNome = [
 //Exercício 19, letra A
 
 function ordenaPorNome() {
-   consultasNome.sort(function(nomea, nomeb) {
+   consultasNome.sort(function (nomea, nomeb) {
       if (nomea.nome > nomeb.nome) {
          return 1
       }
@@ -348,6 +348,7 @@ function ordenaPorNome() {
 
       return 0
    })
+
    return consultasNome
 }
 
@@ -378,5 +379,14 @@ const contas = [
 ]
 
 function atualizaSaldo() {
-   // implemente sua lógica aqui
+
+   contas.forEach((conta) => {
+      let compras = conta.compras.reduce((acumulador, valorAtual) => {
+         return acumulador + valorAtual
+      }, 0)
+      conta.saldoTotal -= compras
+   })
+
+   return contas
+
 }
