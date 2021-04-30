@@ -228,40 +228,66 @@ function maioresDe18(arrayDePessoas) {
 
    return arrayDePessoas.filter(
       (pessoa) => {
-      if (pessoa.idade >= 20) {
-         return true
-      }
-   })
+         if (pessoa.idade >= 20) {
+            return true
+         }
+      })
 }
 
 // Exercício 16, letra B
 
 function menoresDe18(arrayDePessoas) {
-   
+
    return arrayDePessoas.filter(
       (pessoa) => {
-      if (pessoa.idade < 20) {
-         return true
-      }
-   })
+         if (pessoa.idade < 20) {
+
+            return true
+         }
+      })
 }
 
 // Exercício 17, letra A
+const array = [1, 2, 3, 4, 5, 6]
+const arrayMultiplicada2 = []
+const arrayMultiplicada2S = []
+const arrayParImparString = []
 
 function multiplicaArrayPor2(array) {
-   // implemente sua lógica aqui
+   for (let numero of array) {
+      arrayMultiplicada2.push(numero * 2)
+   }
+
+   return arrayMultiplicada2
+
 }
 
 // Exercício 17, letra B
 
 function multiplicaArrayPor2S(array) {
-   // implemente sua lógica aqui
+   for (let numero of array) {
+      arrayMultiplicada2S.push(String(numero * 2))
+   }
+
+   return arrayMultiplicada2S
+
 }
+
 
 // Exercício 17, letra C
 
 function verificaParidade(array) {
-   // implemente sua lógica aqui
+   for (let numero of array) {
+      let numeroString = String(numero)
+      if (numero % 2 === 0) {
+         arrayParImparString.push(`${numeroString} é par`)
+      } else {
+         arrayParImparString.push(`${numeroString} é ímpar`)
+      }
+
+   }
+   
+   return arrayParImparString
 }
 
 // Exercício 18
