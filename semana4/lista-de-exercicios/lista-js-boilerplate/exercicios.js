@@ -286,7 +286,7 @@ function verificaParidade(array) {
       }
 
    }
-   
+
    return arrayParImparString
 }
 
@@ -304,14 +304,26 @@ const pessoas = [
 //Exercício 18, letra A
 
 function retornaPessoasAutorizadas() {
-   // implemente sua lógica aqui
+   return pessoas.filter(
+      (pessoa) => {
+         if (pessoa.idade > 14 && pessoa.idade < 60 && pessoa.altura >= 1.5) {
+            
+            return true
+         }
+      })
 }
 
 
 // Exercício 18, letra B
 
 function retornaPessoasNaoAutorizadas() {
-   // implemente sua lógica aqui
+   return pessoas.filter(
+      (pessoa) => {
+         if (pessoa.idade <= 14 || pessoa.idade >= 60 || pessoa.altura < 1.5) {
+            console.log(pessoa)
+            return true
+         }
+      })
 }
 
 //Exercício 19
