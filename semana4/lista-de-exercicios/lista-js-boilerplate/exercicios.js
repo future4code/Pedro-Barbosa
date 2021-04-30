@@ -97,7 +97,7 @@ function retornaNNumerosPares(n) {
 
 function checaTriangulo(a, b, c) {
 
-   let ValorTriangulo 
+   let ValorTriangulo
 
    if (a === b && a === c) {
       ValorTriangulo = "Equilátero"
@@ -112,7 +112,25 @@ function checaTriangulo(a, b, c) {
 // Exercício 9
 
 function comparaDoisNumeros(num1, num2) {
-   // implemente sua lógica aqui
+   comparador = {
+      maiorNumero: 0,
+      maiorDivisivelporMenor: true,
+      diferenca: 0,
+   }
+
+   if (num1 > num2) {
+      comparador.maiorNumero = num1
+      comparador.maiorDivisivelporMenor = num1 % num2 === 0
+      comparador.diferenca = num1 - num2
+
+   } else {
+      comparador.maiorNumero = num2
+      comparador.maiorDivisivelporMenor = num2 % num1 === 0
+      comparador.diferenca = num2 - num1
+   }
+
+   return comparador
+
 }
 
 // Exercício 10
