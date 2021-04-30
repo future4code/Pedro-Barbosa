@@ -83,7 +83,14 @@ function retornaExpressoesBooleanas() {
 //Exercício 7
 
 function retornaNNumerosPares(n) {
-   // implemente sua lógica aqui
+   let arrayNPares = []
+   let proximosCinco = n * 2
+   for (i = 0; i < proximosCinco; i++) {
+      if (i % 2 === 0) {
+         arrayNPares.push(i)
+      }
+   }
+   return arrayNPares
 }
 
 // Exercício 8
