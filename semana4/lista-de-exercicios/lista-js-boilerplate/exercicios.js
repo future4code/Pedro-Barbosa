@@ -138,7 +138,7 @@ function comparaDoisNumeros(num1, num2) {
 function segundoMaiorEMenor(array) {
    let arraySegundoMaiorMenor = []
 
-   
+
    array.sort((menor, maior) => maior - menor)
    segundoMaior = array[1]
    segundoMenor = array[array.length - 2]
@@ -161,7 +161,13 @@ function ordenaArray(array) {
 // Exercício 12
 
 function filmeFavorito() {
-   // implemente sua lógica aqui
+   filmeFavorito = {
+      nome: "O Diabo Veste Prada",
+      ano: 2006,
+      diretor: "David Frankel",
+      atores: ["Meryl Streep", "Anne Hathaway", "Emily Blunt", "Stanley Tucci"]
+   }
+   return filmeFavorito
 }
 
 // Exercício 13
