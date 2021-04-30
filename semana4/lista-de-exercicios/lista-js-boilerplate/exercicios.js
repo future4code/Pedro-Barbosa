@@ -45,9 +45,9 @@ function retornaNumerosPares(array) {
 
 function retornaMaiorNumero(array) {
    numMaior = Number.NEGATIVE_INFINITY
-   for (let numeros of array) {
-      if (numeros > numMaior) {
-         numMaior = numeros
+   for (let numero of array) {
+      if (numero > numMaior) {
+         numMaior = numero
       }
    }
    return numMaior
@@ -136,7 +136,16 @@ function comparaDoisNumeros(num1, num2) {
 // Exercício 10
 
 function segundoMaiorEMenor(array) {
-   // implemente sua lógica aqui
+   let arraySegundoMaiorMenor = []
+
+   array.sort((menor, maior) => maior - menor)
+   segundoMaior = array[1]
+   segundoMenor = array[array.length - 2]
+   
+   arraySegundoMaiorMenor.push(segundoMaior, segundoMenor)
+  
+   return arraySegundoMaiorMenor
+   
 }
 
 //Exercício 11
