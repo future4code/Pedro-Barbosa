@@ -139,7 +139,7 @@ function segundoMaiorEMenor(array) {
    let arraySegundoMaiorMenor = []
 
 
-   array.sort((menor, maior) => maior - menor)
+   array.sort((nomea, nomeb) => nomeb - nomea)
    segundoMaior = array[1]
    segundoMenor = array[array.length - 2]
 
@@ -153,7 +153,7 @@ function segundoMaiorEMenor(array) {
 
 function ordenaArray(array) {
 
-   array.sort((menor, maior) => menor - maior)
+   array.sort((nomea, nomeb) => nomea - nomeb)
    return array
 
 }
@@ -307,7 +307,7 @@ function retornaPessoasAutorizadas() {
    return pessoas.filter(
       (pessoa) => {
          if (pessoa.idade > 14 && pessoa.idade < 60 && pessoa.altura >= 1.5) {
-            
+
             return true
          }
       })
@@ -320,7 +320,7 @@ function retornaPessoasNaoAutorizadas() {
    return pessoas.filter(
       (pessoa) => {
          if (pessoa.idade <= 14 || pessoa.idade >= 60 || pessoa.altura < 1.5) {
-            console.log(pessoa)
+
             return true
          }
       })
@@ -338,8 +338,20 @@ const consultasNome = [
 //Exercício 19, letra A
 
 function ordenaPorNome() {
+   consultasNome.sort(function(nomea, nomeb) {
+      if (nomea.nome > nomeb.nome) {
+         return 1
+      }
+      if (nomea.nome < nomeb.nome) {
+         return -1
+      }
 
+      return 0
+   })
+   return consultasNome
 }
+
+
 
 // Exercício 19, letra B
 
