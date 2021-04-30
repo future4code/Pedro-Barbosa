@@ -182,7 +182,7 @@ function imprimeChamada() {
       atores: ["Meryl Streep", "Anne Hathaway", "Emily Blunt", "Stanley Tucci"]
    }
    let frase = `Venha assistir ao filme ${filmeFavorito.nome}, de ${filmeFavorito.ano}, dirigido por ${filmeFavorito.diretor} e estrelado`
-  + ` por ${filmeFavorito.atores[0]}, ${filmeFavorito.atores[1]}, ${filmeFavorito.atores[2]}, ${filmeFavorito.atores[3]}.`
+      + ` por ${filmeFavorito.atores[0]}, ${filmeFavorito.atores[1]}, ${filmeFavorito.atores[2]}, ${filmeFavorito.atores[3]}.`
 
    return frase
 }
@@ -203,7 +203,7 @@ function criaRetangulo(lado1, lado2) {
 // Exercício 15
 
 function anonimizaPessoa(pessoa) {
-    pessoa = {
+   pessoa = {
       nome: "ANÔNIMO",
       idade: 25,
       email: "astrodev@future4.com.br",
@@ -225,13 +225,25 @@ const arrayDePessoas = [
 // Exercício 16, letra A
 
 function maioresDe18(arrayDePessoas) {
-   // implemente sua lógica aqui
+
+   return arrayDePessoas.filter(
+      (pessoa) => {
+      if (pessoa.idade >= 20) {
+         return true
+      }
+   })
 }
 
 // Exercício 16, letra B
 
 function menoresDe18(arrayDePessoas) {
-   // implemente sua lógica aqui
+   
+   return arrayDePessoas.filter(
+      (pessoa) => {
+      if (pessoa.idade < 20) {
+         return true
+      }
+   })
 }
 
 // Exercício 17, letra A
