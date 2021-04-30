@@ -137,21 +137,25 @@ function comparaDoisNumeros(num1, num2) {
 
 function segundoMaiorEMenor(array) {
    let arraySegundoMaiorMenor = []
+   console.log(array)
 
    array.sort((menor, maior) => maior - menor)
    segundoMaior = array[1]
    segundoMenor = array[array.length - 2]
-   
+
    arraySegundoMaiorMenor.push(segundoMaior, segundoMenor)
-  
+
    return arraySegundoMaiorMenor
-   
+
 }
 
 //Exercício 11
 
 function ordenaArray(array) {
-   // implemente sua lógica aqui
+
+   array.sort((menor, maior) => menor - maior)
+   return array
+
 }
 
 // Exercício 12
