@@ -1,0 +1,2182 @@
+{
+	"info": {
+		"_postman_id": "5360966b-5a36-46da-b8b8-c491fa3bcde3",
+		"name": "Labefy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "criaPlaylist",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "pedro-barbosa-paiva",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"J-pop\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "criaPlaylist",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "pedro-barbosa-paiva",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Indie rock\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Function-Execution-Id",
+							"value": "04vz8wzwwi9k"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "55522aa80c2ee0a291dd26d16b1e96b9;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 May 2021 15:03:25 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "listarPlaylists",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "pedro-barbosa-paiva",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "javascript"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "listarPlaylists",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "pedro-barbosa-paiva",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "javascript"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"e3-7HcqQFL8wTyyXGRWtv+OMylaY7I\""
+						},
+						{
+							"key": "Function-Execution-Id",
+							"value": "vogqn5xdfjbv"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "16ee8e9cabe98b62323257b9dd47fb44;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 May 2021 14:18:31 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "227"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"result\": {\n        \"quantity\": 3,\n        \"list\": [\n            {\n                \"id\": \"722b7e29-ae49-442a-ab14-fbe1fa609f7d\",\n                \"name\": \"Metal\"\n            },\n            {\n                \"id\": \"cc4e5f13-3767-42e1-9453-9523e91af12d\",\n                \"name\": \"Folk\"\n            },\n            {\n                \"id\": \"bf5f5f83-9388-4271-82ad-6c894c573b50\",\n                \"name\": \"Rock Progressivo\"\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "listarPlaylists",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "pedro-barbosa-paiva",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "javascript"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"a6-+xhuTTSksl3cfUhSwQVD820O91s\""
+						},
+						{
+							"key": "Function-Execution-Id",
+							"value": "04vzul9ic4s4"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "3fcd2004804b06ada03d13372b9bc67a"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 May 2021 15:01:31 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "166"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"result\": {\n        \"quantity\": 2,\n        \"list\": [\n            {\n                \"id\": \"cc4e5f13-3767-42e1-9453-9523e91af12d\",\n                \"name\": \"Folk\"\n            },\n            {\n                \"id\": \"bf5f5f83-9388-4271-82ad-6c894c573b50\",\n                \"name\": \"Rock Progressivo\"\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "listarPlaylists",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "pedro-barbosa-paiva",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "javascript"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"6a-d0xlnpEEJ50PGwUGEbIXPSa11Xs\""
+						},
+						{
+							"key": "Function-Execution-Id",
+							"value": "04vz52w49l0p"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "8cfc5a0fc387585b9940561f1a0cb016;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 May 2021 15:02:33 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "106"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"result\": {\n        \"quantity\": 1,\n        \"list\": [\n            {\n                \"id\": \"bf5f5f83-9388-4271-82ad-6c894c573b50\",\n                \"name\": \"Rock Progressivo\"\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "listarPlaylists",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "pedro-barbosa-paiva",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "javascript"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"23-sQAEMWSWKQfK9xaS1NLV5+1HHOM\""
+						},
+						{
+							"key": "Function-Execution-Id",
+							"value": "04vzhjbgmyhl"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "640f75b812f47d09e50c85eeb8e7eab9"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 May 2021 15:02:48 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "35"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"result\": {\n        \"quantity\": 0,\n        \"list\": []\n    }\n}"
+				},
+				{
+					"name": "listarPlaylists",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "pedro-barbosa-paiva",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "javascript"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"64-0e9e70+M20ZJiDOXcb6/solAN+g\""
+						},
+						{
+							"key": "Function-Execution-Id",
+							"value": "04vzitnf8w5m"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "96127a67fbc81117ad957c7287d2ecbf;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 May 2021 15:03:36 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "100"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"result\": {\n        \"quantity\": 1,\n        \"list\": [\n            {\n                \"id\": \"e53070e1-3cae-4608-a9fe-86b15e17c030\",\n                \"name\": \"Indie rock\"\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "listarPlaylists",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "pedro-barbosa-paiva",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "javascript"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"e0-EKOu7tc4sm1h56GBSeOuX5O1KCM\""
+						},
+						{
+							"key": "Function-Execution-Id",
+							"value": "04vzlznymcyt"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "7180169598d36e5a93f7238d9a4f4bfa;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 May 2021 15:13:09 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "224"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"result\": {\n        \"quantity\": 3,\n        \"list\": [\n            {\n                \"id\": \"e53070e1-3cae-4608-a9fe-86b15e17c030\",\n                \"name\": \"Indie rock\"\n            },\n            {\n                \"id\": \"cc81f09b-e407-4920-a3b3-da0265f1b770\",\n                \"name\": \"Hip hop\"\n            },\n            {\n                \"id\": \"378dafb1-dfcd-45e7-ba18-ee69c7cf8a6a\",\n                \"name\": \"J-pop\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "procuraPlaylist",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "pedro-barbosa-paiva",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/search?name=progressivo",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						"search"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "progressivo"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "procuraPlaylist",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "pedro-barbosa-paiva",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/search?name=progressivo",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								"search"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "progressivo"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"6e-Pij+pS7T+vOWlkRtAyLcNN4lMU4\""
+						},
+						{
+							"key": "Function-Execution-Id",
+							"value": "vogqkhl6tg57"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "f54e58349862b28fddc885b95ed432e6;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 May 2021 14:19:45 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "110"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"result\": {\n        \"quantity\": 1,\n        \"playlist\": [\n            {\n                \"id\": \"bf5f5f83-9388-4271-82ad-6c894c573b50\",\n                \"name\": \"Rock Progressivo\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "faixasPlaylist",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "pedro-barbosa-paiva",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						":playlistId",
+						"tracks"
+					],
+					"variable": [
+						{
+							"key": "playlistId",
+							"value": "cc81f09b-e407-4920-a3b3-da0265f1b770"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "faixasPlaylist",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "pedro-barbosa-paiva",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								":playlistId",
+								"tracks"
+							],
+							"variable": [
+								{
+									"key": "playlistId",
+									"value": "cc4e5f13-3767-42e1-9453-9523e91af12d"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"11d-8dn2k+oO3nQu5Scie3P7e6DT1kI\""
+						},
+						{
+							"key": "Function-Execution-Id",
+							"value": "vogqs3kue6id"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "a5c8d29283e40c478b01fafe1b71af2b;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 May 2021 14:51:12 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "285"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"result\": {\n        \"quantity\": 2,\n        \"tracks\": [\n            {\n                \"id\": \"2dff1dd5-d1cd-4cd2-ba60-f6d64d8af02b\",\n                \"name\": \"Come Join the Murder\",\n                \"artist\": \"The White Buffalo\",\n                \"url\": \"twbjoinmurder\"\n            },\n            {\n                \"id\": \"c8fc27a3-a924-42fd-b70e-56a06bdcdb91\",\n                \"name\": \"House of the Rising Sun\",\n                \"artist\": \"The Animals\",\n                \"url\": \"tarisingsun\"\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "faixasPlaylist",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "pedro-barbosa-paiva",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								":playlistId",
+								"tracks"
+							],
+							"variable": [
+								{
+									"key": "playlistId",
+									"value": "bf5f5f83-9388-4271-82ad-6c894c573b50"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"1e6-scDUxyeYMDFIwXlwc1oHRrIlSrc\""
+						},
+						{
+							"key": "Function-Execution-Id",
+							"value": "vogqxpxli02l"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "908d35de2c4bb876338059c460cdead4;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 May 2021 14:53:10 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "486"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"result\": {\n        \"quantity\": 4,\n        \"tracks\": [\n            {\n                \"id\": \"266f9657-e13e-4a19-bc9a-0b60d5bcefec\",\n                \"name\": \"The Gates of Delirium\",\n                \"artist\": \"Yes\",\n                \"url\": \"yesdelirium\"\n            },\n            {\n                \"id\": \"76f29901-c771-44ea-a19f-6a95181b4f79\",\n                \"name\": \"Heart of the Sunrise\",\n                \"artist\": \"Yes\",\n                \"url\": \"yessunrise\"\n            },\n            {\n                \"id\": \"2cfddf97-3082-4b24-ac39-6d43c5afb079\",\n                \"name\": \"Kashmir\",\n                \"artist\": \"Led Zeppelin\",\n                \"url\": \"kashmirzeppelin\"\n            },\n            {\n                \"id\": \"8322e9dc-0492-4c58-9ab5-ebd6f2f12fe3\",\n                \"name\": \"Starway to Heaven\",\n                \"artist\": \"Led Zeppelin\",\n                \"url\": \"sthzeppelin\"\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "faixasPlaylist",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "pedro-barbosa-paiva",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								":playlistId",
+								"tracks"
+							],
+							"variable": [
+								{
+									"key": "playlistId",
+									"value": "722b7e29-ae49-442a-ab14-fbe1fa609f7d"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"fd-iQTM/ZbJ//082KT0kXHp/Myo0cY\""
+						},
+						{
+							"key": "Function-Execution-Id",
+							"value": "vogqsebwsa70"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "5a3ccec70d0a79d058916b8fc9745015"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 May 2021 14:37:48 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "253"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"result\": {\n        \"quantity\": 2,\n        \"tracks\": [\n            {\n                \"id\": \"1d685a4d-99bc-4f9f-9407-48aa4d255dde\",\n                \"name\": \"South of Heaven\",\n                \"artist\": \"Slayer\",\n                \"url\": \"slayersheaven\"\n            },\n            {\n                \"id\": \"c93c9385-5604-4ed3-bd1b-aa851ddb0436\",\n                \"name\": \"The Metal\",\n                \"artist\": \"Tenacious D\",\n                \"url\": \"thedmetal\"\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "faixasPlaylist",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "pedro-barbosa-paiva",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								":playlistId",
+								"tracks"
+							],
+							"variable": [
+								{
+									"key": "playlistId",
+									"value": "722b7e29-ae49-442a-ab14-fbe1fa609f7d"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"17e-CAZd8KHgcGU6MHtq6vPcdEG75mo\""
+						},
+						{
+							"key": "Function-Execution-Id",
+							"value": "vogqubjd4hdg"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "3809a7f027ab4eb61698d128681e8af0"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 May 2021 14:48:25 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "382"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"result\": {\n        \"quantity\": 3,\n        \"tracks\": [\n            {\n                \"id\": \"1d685a4d-99bc-4f9f-9407-48aa4d255dde\",\n                \"name\": \"South of Heaven\",\n                \"artist\": \"Slayer\",\n                \"url\": \"slayersheaven\"\n            },\n            {\n                \"id\": \"c93c9385-5604-4ed3-bd1b-aa851ddb0436\",\n                \"name\": \"The Metal\",\n                \"artist\": \"Tenacious D\",\n                \"url\": \"thedmetal\"\n            },\n            {\n                \"id\": \"6bf95cae-e6e4-4f34-a34b-5d1f5792a8af\",\n                \"name\": \"Silent Night, Bodom Night\",\n                \"artist\": \"Children Of Bodom\",\n                \"url\": \"bodomnight\"\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "faixasPlaylist",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "pedro-barbosa-paiva",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								":playlistId",
+								"tracks"
+							],
+							"variable": [
+								{
+									"key": "playlistId",
+									"value": "722b7e29-ae49-442a-ab14-fbe1fa609f7d"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"fd-iQTM/ZbJ//082KT0kXHp/Myo0cY\""
+						},
+						{
+							"key": "Function-Execution-Id",
+							"value": "vogqj9s9l7kp"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "88221318e6f2135154a5d76218987470;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 May 2021 14:49:46 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "253"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"result\": {\n        \"quantity\": 2,\n        \"tracks\": [\n            {\n                \"id\": \"1d685a4d-99bc-4f9f-9407-48aa4d255dde\",\n                \"name\": \"South of Heaven\",\n                \"artist\": \"Slayer\",\n                \"url\": \"slayersheaven\"\n            },\n            {\n                \"id\": \"c93c9385-5604-4ed3-bd1b-aa851ddb0436\",\n                \"name\": \"The Metal\",\n                \"artist\": \"Tenacious D\",\n                \"url\": \"thedmetal\"\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "faixasPlaylist",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "pedro-barbosa-paiva",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								":playlistId",
+								"tracks"
+							],
+							"variable": [
+								{
+									"key": "playlistId",
+									"value": "722b7e29-ae49-442a-ab14-fbe1fa609f7d"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"24b-DFQa9rbt7AiWBoN6tPzxJIcMXK4\""
+						},
+						{
+							"key": "Function-Execution-Id",
+							"value": "04vzn6bfw4gi"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "b2f3ccf305df29b96a04c1e339a37674"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 May 2021 14:59:34 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "587"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"result\": {\n        \"quantity\": 5,\n        \"tracks\": [\n            {\n                \"id\": \"1d685a4d-99bc-4f9f-9407-48aa4d255dde\",\n                \"name\": \"South of Heaven\",\n                \"artist\": \"Slayer\",\n                \"url\": \"slayersheaven\"\n            },\n            {\n                \"id\": \"c93c9385-5604-4ed3-bd1b-aa851ddb0436\",\n                \"name\": \"The Metal\",\n                \"artist\": \"Tenacious D\",\n                \"url\": \"thedmetal\"\n            },\n            {\n                \"id\": \"afc083e7-f9dc-4ce8-aca1-cc248d065d50\",\n                \"name\": \"Enter Sandman\",\n                \"artist\": \"Metallica\",\n                \"url\": \"metallsandman\"\n            },\n            {\n                \"id\": \"cb2c04f6-ccf2-4431-b1a7-f9f1a41f39e4\",\n                \"name\": \"Neon Knights\",\n                \"artist\": \"Black Sabbath\",\n                \"url\": \"blackneon\"\n            },\n            {\n                \"id\": \"c369a29d-1791-465f-90ca-34f8db11d046\",\n                \"name\": \"Neon Knights\",\n                \"artist\": \"Black Sabbath\",\n                \"url\": \"blackneon\"\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "faixasPlaylist",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "pedro-barbosa-paiva",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								":playlistId",
+								"tracks"
+							],
+							"variable": [
+								{
+									"key": "playlistId",
+									"value": "e53070e1-3cae-4608-a9fe-86b15e17c030"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"187-/QYhD67RIBC37Dx1HQDr2kHCm/c\""
+						},
+						{
+							"key": "Function-Execution-Id",
+							"value": "04vz0g6s9rw7"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "fbcf28100fe4dfa10b25184f99b27110"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 May 2021 15:08:37 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "391"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"result\": {\n        \"quantity\": 3,\n        \"tracks\": [\n            {\n                \"id\": \"084e2ef5-3959-4055-a062-6e23ea6d0a14\",\n                \"name\": \"Take me Out\",\n                \"artist\": \"Franz Ferdinand\",\n                \"url\": \"franztakeme\"\n            },\n            {\n                \"id\": \"5ee26fa8-13dd-4d09-bdc9-d3b5f1dbd8a4\",\n                \"name\": \"Sam's Town\",\n                \"artist\": \"The Killers\",\n                \"url\": \"killerstown\"\n            },\n            {\n                \"id\": \"9c88548a-470d-42b2-b0c7-f9b7b764e1d5\",\n                \"name\": \"Ain't No Rest For The Wicked\",\n                \"artist\": \"Cage the Elephant\",\n                \"url\": \"restwicked\"\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "faixasPlaylist",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "pedro-barbosa-paiva",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								":playlistId",
+								"tracks"
+							],
+							"variable": [
+								{
+									"key": "playlistId",
+									"value": "e53070e1-3cae-4608-a9fe-86b15e17c030"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"115-oihCVsWcnFmuhHhF5Or+kBGv7Lk\""
+						},
+						{
+							"key": "Function-Execution-Id",
+							"value": "04vz6imyoi1r"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "1f3ae54d3563c6222eb550377f87d591;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 May 2021 15:09:50 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "277"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"result\": {\n        \"quantity\": 2,\n        \"tracks\": [\n            {\n                \"id\": \"5ee26fa8-13dd-4d09-bdc9-d3b5f1dbd8a4\",\n                \"name\": \"Sam's Town\",\n                \"artist\": \"The Killers\",\n                \"url\": \"killerstown\"\n            },\n            {\n                \"id\": \"9c88548a-470d-42b2-b0c7-f9b7b764e1d5\",\n                \"name\": \"Ain't No Rest For The Wicked\",\n                \"artist\": \"Cage the Elephant\",\n                \"url\": \"restwicked\"\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "faixasPlaylist",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "pedro-barbosa-paiva",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								":playlistId",
+								"tracks"
+							],
+							"variable": [
+								{
+									"key": "playlistId",
+									"value": "378dafb1-dfcd-45e7-ba18-ee69c7cf8a6a"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"96-p06nNjGFkAuarXt0f09G5poqrsg\""
+						},
+						{
+							"key": "Function-Execution-Id",
+							"value": "04vzxgwsxqo6"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "dc1a5928942b930e6ad7d3d8f9120899"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 May 2021 15:16:24 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "150"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"result\": {\n        \"quantity\": 1,\n        \"tracks\": [\n            {\n                \"id\": \"7f36775b-26e1-46b5-80e4-16f77d6b75b2\",\n                \"name\": \"Hello, shooting-star\",\n                \"artist\": \"moumoon\",\n                \"url\": \"korosensei\"\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "faixasPlaylist",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "pedro-barbosa-paiva",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								":playlistId",
+								"tracks"
+							],
+							"variable": [
+								{
+									"key": "playlistId",
+									"value": "cc81f09b-e407-4920-a3b3-da0265f1b770"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"94-JwPb3PZyM7zfgGTeofpsOUz0ThU\""
+						},
+						{
+							"key": "Function-Execution-Id",
+							"value": "04vzxtg92or4"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "b137887fa49726c6e84825a6a3cada5f;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 May 2021 15:17:57 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "148"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"result\": {\n        \"quantity\": 1,\n        \"tracks\": [\n            {\n                \"id\": \"d7a384c2-9542-4668-abf9-2437d1cf59c5\",\n                \"name\": \"Clint Eastwood\",\n                \"artist\": \"Gorillaz\",\n                \"url\": \"clintgorillaz\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "adicionarFaixaPlaylist",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "pedro-barbosa-paiva",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Clint Eastwood\",\r\n    \"artist\" : \"Gorillaz\",\r\n    \"url\" : \"clintgorillaz\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						":playlistId",
+						"tracks"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					],
+					"variable": [
+						{
+							"key": "playlistId",
+							"value": "cc81f09b-e407-4920-a3b3-da0265f1b770"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "adicionarFaixaPlaylist",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "pedro-barbosa-paiva",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Silent Night, Bodom Night\",\r\n    \"artist\" : \"Children Of Bodom\",\r\n    \"url\" : \"bodomnight\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								":playlistId",
+								"tracks"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "playlistId",
+									"value": "722b7e29-ae49-442a-ab14-fbe1fa609f7d"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Function-Execution-Id",
+							"value": "vogqngfr9p6s"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "ec321a10da5814c8f33f1d21ef01b55b;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 May 2021 14:48:23 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "adicionarFaixaPlaylist",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "pedro-barbosa-paiva",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Enter Sandman\",\r\n    \"artist\" : \"Metallica\",\r\n    \"url\" : \"metallsandman\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								":playlistId",
+								"tracks"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "playlistId",
+									"value": "722b7e29-ae49-442a-ab14-fbe1fa609f7d"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Function-Execution-Id",
+							"value": "vogqngfr9p6s"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "ec321a10da5814c8f33f1d21ef01b55b;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 May 2021 14:48:23 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "adicionarFaixaPlaylist",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "pedro-barbosa-paiva",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Neon Knights\",\r\n    \"artist\" : \"Black Sabbath\",\r\n    \"url\" : \"blackneon\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								":playlistId",
+								"tracks"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "playlistId",
+									"value": "722b7e29-ae49-442a-ab14-fbe1fa609f7d"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Function-Execution-Id",
+							"value": "04vz4p22guo6"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "429ef18396ad4c2883424b3709c50d8c;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 May 2021 14:56:43 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "deletarMusica",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "pedro-barbosa-paiva",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks/:trackId",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						":playlistId",
+						"tracks",
+						":trackId"
+					],
+					"variable": [
+						{
+							"key": "playlistId",
+							"value": "e53070e1-3cae-4608-a9fe-86b15e17c030"
+						},
+						{
+							"key": "trackId",
+							"value": "084e2ef5-3959-4055-a062-6e23ea6d0a14"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "deletarMusica",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "pedro-barbosa-paiva",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks/:trackId",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								":playlistId",
+								"tracks",
+								":trackId"
+							],
+							"variable": [
+								{
+									"key": "playlistId",
+									"value": "722b7e29-ae49-442a-ab14-fbe1fa609f7d"
+								},
+								{
+									"key": "trackId",
+									"value": "6bf95cae-e6e4-4f34-a34b-5d1f5792a8af"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Function-Execution-Id",
+							"value": "vogqtecnlfre"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "116dac306e7b05efe8b8b54bf10ea9c7"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 May 2021 14:49:27 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "deletarPlaylist",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "pedro-barbosa-paiva",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId\n",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						":playlistId\n"
+					],
+					"variable": [
+						{
+							"key": "playlistId\n",
+							"value": "bf5f5f83-9388-4271-82ad-6c894c573b50"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "deletarPlaylist",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "pedro-barbosa-paiva",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId\n",
+							"protocol": "https",
+							"host": [
+								"us-central1-labenu-apis",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"labefy",
+								"playlists",
+								":playlistId\n"
+							],
+							"variable": [
+								{
+									"key": "playlistId\n",
+									"value": "722b7e29-ae49-442a-ab14-fbe1fa609f7d"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Function-Execution-Id",
+							"value": "04vzxohnbbk0"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "1abf12b8a9db253e6c1536b8facc3a5b;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 May 2021 15:01:22 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}
