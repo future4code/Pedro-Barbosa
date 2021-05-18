@@ -1,4 +1,4 @@
-import { ContainerGeral } from './styled';
+import { ContainerGeral, ContainerBotao } from './styled';
 import React from 'react';
 import Cadastro from './components/Cadastro/Cadastro'
 import ListaUsuario from './components/ListaUsuario/ListaUsuario'
@@ -35,10 +35,14 @@ export default class App extends React.Component {
       <ContainerGeral>
         {this.renderizaPagina()}
         {this.state.pagina !== "lista usuario" && (
-          <button onClick={this.paginaListaUsuario}>Lista de usuários</button>
+          <ContainerBotao>
+            <button onClick={this.paginaListaUsuario}>Lista de usuários</button>
+          </ContainerBotao>
         )}
         {this.state.pagina !== "cadastro" && (
-          <button onClick={this.paginaCadastro}>Voltar</button>
+          <ContainerBotao>
+            <button onClick={this.paginaCadastro}>Voltar</button>
+          </ContainerBotao>
         )}
 
       </ContainerGeral>

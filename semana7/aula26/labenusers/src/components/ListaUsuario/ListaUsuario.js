@@ -31,12 +31,34 @@ export default class ListaUsuario extends React.Component {
             });
     };
 
+    deletarUsuarios(id) {
+
+        const header = {
+            headers: {
+                Authorization: "pedro-barbosa-paiva"
+            }
+        };
+
+        axios
+            .delete(`https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users/${id}`, header)
+            .then((res) => {
+                this.getUsuarios();
+            })
+            .catch((err) => {
+                alert(err)
+            })
+    }
+
     render() {
         const usuarioComponents = this.state.usuarios.map((usuario) => {
-            return <li key={usuario.id}>{usuario.name}</li>
+            return <li key={usuario.id}>
+                {usuario.name}
+                <button onClick={() => this.deletarUsuarios(usuario.id)}>x</button>
+            </li>
         });
         return (
             <ContainerUsuarios>
+                <h1>Lista de usuários</h1>
                 {usuarioComponents}
             </ContainerUsuarios>
         )

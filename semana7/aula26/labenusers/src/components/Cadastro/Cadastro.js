@@ -37,7 +37,7 @@ export default class Cadastro extends React.Component {
                 alert("Cadastro feito com sucesso!");
             })
             .catch((err) => {
-                alert("heh");
+                alert("Deu ruim :/");
             });
     };
 
@@ -49,6 +49,7 @@ export default class Cadastro extends React.Component {
     render() {
         return (
             <ContainerCadastro>
+                <h1>Labenusers</h1>
                 <input
                     onChange={this.handleNome}
                     value={this.state.name}
