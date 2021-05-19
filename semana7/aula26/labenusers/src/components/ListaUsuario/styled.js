@@ -1,23 +1,24 @@
 import styled from 'styled-components'
 
 export const ContainerUsuarios = styled.div`
- display: flex;
- flex-direction: column;
- margin: auto;
- width: 50%;
- line-height: 5vh;
- 
 
 h1 {
-text-align: center;
+    text-align: center;
+    margin: 8vh 0vh;
+    
  }
 
- button {
-font-size: 10px;
-padding: 0;
-margin-left: 5px;
-width: 15px;
-height: 15px;
-
+ p {
+     margin: 0
  }
+
+ `
+
+export const CardUsuarios = styled.div`
+ display: flex;
+ border: 1px solid black;
+ padding: 10px;
+ width: 50%;
+ margin: 20px auto;
+ justify-content: space-between;
  `
