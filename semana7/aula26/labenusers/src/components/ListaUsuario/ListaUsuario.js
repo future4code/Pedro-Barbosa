@@ -1,6 +1,7 @@
 import React from "react";
 import axios from 'axios';
-import { ContainerUsuarios } from "./styled";
+import DetalhesUsuario from '../DetalhesUsuario/DetalhesUsuario'
+import { ContainerUsuarios, CardUsuarios } from "./styled";
 
 
 export default class ListaUsuario extends React.Component {
@@ -12,7 +13,7 @@ export default class ListaUsuario extends React.Component {
         this.getUsuarios();
     }
 
-    getUsuarios = () => {
+    getUsuarios = async () => {
         const header = {
             headers: {
                 Authorization: "pedro-barbosa-paiva"
@@ -21,47 +22,61 @@ export default class ListaUsuario extends React.Component {
 
         const BASE_URL = "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users"
 
-        axios
-            .get(BASE_URL, header)
-            .then((res) => {
-                this.setState({ usuarios: res.data })
-            })
-            .catch((err) => {
-                alert(err)
-            });
-    };
+        try {
+            const res = await axios
+                .get(BASE_URL, header)
+
+            this.setState({ usuarios: res.data })
+        } catch (err) {
+            alert("Ocorreu um problema! Tente novamente.")
+        }
+
+    }
+
+    mudaPagina = () => {
+        if (this.state.pagina === "lista usuario") {
+            this.setState({ pagina: 'detalhes' })
+        }
+    }
+
 
     deletarUsuarios(id) {
-
+        const BASE_URL = `https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users/${id}`
         const header = {
             headers: {
                 Authorization: "pedro-barbosa-paiva"
             }
         };
 
-        axios
-            .delete(`https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users/${id}`, header)
-            .then((res) => {
-                this.getUsuarios();
-            })
-            .catch((err) => {
-                alert(err)
-            })
+        if (window.confirm("Tem certeza de que deseja deletar?")) {
+            axios
+                .delete(BASE_URL, header)
+                .then((res) => {
+                    this.getUsuarios();
+                })
+                .catch((err) => {
+                    alert(err)
+                })
+        }
     }
+
+
 
     render() {
         const usuarioComponents = this.state.usuarios.map((usuario) => {
-            return <li key={usuario.id}>
-                {usuario.name}
+            return (<CardUsuarios key={usuario.id}>
+                <p onClick={this.props.detalhes}>{usuario.name}</p>
                 <button onClick={() => this.deletarUsuarios(usuario.id)}>x</button>
-            </li>
+            </CardUsuarios>
+            )
         });
-        return (
-            <ContainerUsuarios>
-                <h1>Lista de usuários</h1>
-                {usuarioComponents}
-            </ContainerUsuarios>
-        )
-    }
 
+            return (
+                <ContainerUsuarios>
+                    <h1>Lista de usuários</h1>
+                    {usuarioComponents}
+                </ContainerUsuarios>
+            )
+       
+    }
 }
