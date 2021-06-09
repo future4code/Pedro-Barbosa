@@ -1,4 +1,4 @@
-function CreateTripPage() {
+const CreateTripPage = () => {
     return (
       <div>
           oi create trip

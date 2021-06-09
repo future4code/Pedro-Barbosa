@@ -1,7 +1,7 @@
-function ApplicationFormPage() {
+const ApplicationFormPage = () => {
     return (
         <div>
-            oi apllication form
+           <h1>oi apllication form</h1> 
         </div>
     );
 }

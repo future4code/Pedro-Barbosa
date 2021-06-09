@@ -1,4 +1,4 @@
-function TripDetailsPage() {
+const TripDetailsPage = () => {
     return (
       <div>
           oi trip details
