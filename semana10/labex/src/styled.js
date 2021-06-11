@@ -6,7 +6,6 @@ export const GlobalStyle = createGlobalStyle`
   body {
    margin: 0;
    font-size: large;
-   /* font-family: 'Montserrat' ; */
    font-family: "Myriad Pro";
    background-color: #103E62;
    background:url(${launch}) no-repeat;
