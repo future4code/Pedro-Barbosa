@@ -1,10 +1,10 @@
 import { HeaderContainer } from "./styled";
+import logolabex from "../../assets/labex.png"
 
 const Header = () => {
     return (
         <HeaderContainer>
-            <h1>LabeX</h1>
-            <p>Encontre as melhores viagens espaciais!</p>
+            <img src={logolabex} alt="Labex - Encontre as melhores viagens espaciais!" />
         </HeaderContainer>
     )
 }

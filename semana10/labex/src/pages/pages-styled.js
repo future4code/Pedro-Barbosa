@@ -4,7 +4,7 @@ export const HeaderHomeButton = styled.header`
 display: flex;
 justify-content: flex-end;
 position: absolute;
-top: 130px;
+top: 250px;
 right: 60px;
 
 button {
@@ -14,7 +14,7 @@ button {
 
 export const Title = styled.h1`
 text-align: center;
-margin-bottom: 50px;
+margin: 100px 0;
 `
 
 export const LogoutAndBackPosition = styled.div`
