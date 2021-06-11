@@ -8,6 +8,7 @@ const useProtectedPage = () => {
     const token = localStorage.getItem("token");
     if (!token) {
       history.push("/login");
+      alert("Você precisa estar logado para acessar essa área!")
     }
   }, [history]);
 };
