@@ -8,7 +8,7 @@ grid-template-rows: 1fr ;
 h1 {
     grid-area: 2 / 3 / 1 / 2;
 }
-`
+`;
 
 export const TripCard = styled.div`
 display: flex;
@@ -25,6 +25,6 @@ box-shadow: 0 4px 8px rgba(0,0,0,0.8);
 font-size: 17px;
 word-wrap: break-word;
 overflow-x: hidden;
-`
+`;
 
 

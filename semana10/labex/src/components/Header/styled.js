@@ -13,5 +13,5 @@ img {
     width: 400px;
     height: 400px;
     padding: 20px;
-}
-`
+};
+`;

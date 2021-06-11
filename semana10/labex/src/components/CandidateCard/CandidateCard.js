@@ -10,7 +10,7 @@ const CandidateCard = (props) => {
     const decide = (decision) => {
         const body = {
             approve: decision
-        }
+        };
 
         axios
             .put(`${BASE_URL}/trips/${props.tripId}/candidates/${id}/decide`, body, {
@@ -21,7 +21,7 @@ const CandidateCard = (props) => {
                 props.getTripDetails()
             })
             .catch((err) => alert(err.response.data.message))
-    }
+    };
 
     return (
         <ContainerCandidateCard>
@@ -42,9 +42,9 @@ const CandidateCard = (props) => {
             </ButtonsContainer>
 
         </ContainerCandidateCard>
-    )
-}
+    );
+};
 
-export default CandidateCard
+export default CandidateCard;
 
 

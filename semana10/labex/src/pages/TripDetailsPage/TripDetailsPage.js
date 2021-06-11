@@ -1,10 +1,10 @@
 import { useHistory, useParams } from "react-router-dom";
 import useProtectedPage from "../../hooks/useProtectedPage";
 import Header from "../../components/Header/Header";
-import useRequestData from "../../hooks/useRequestData"
-import { goToAdminHomePage, goToHomePage } from "../../routes/coordinator"
-import { HeaderHomeButton, LogoutAndBackPosition } from "../pages-styled"
-import { TripDetailCard, TripDetailContainer, ApprovedCandidatesList, NoPendingContainer, PendingCandidatesContainer } from "./styled"
+import useRequestData from "../../hooks/useRequestData";
+import { goToAdminHomePage, goToHomePage } from "../../routes/coordinator";
+import { HeaderHomeButton, LogoutAndBackPosition } from "../pages-styled";
+import { TripDetailCard, TripDetailContainer, ApprovedCandidatesList, NoPendingContainer, PendingCandidatesContainer } from "./styled";
 import CandidateCard from "../../components/CandidateCard/CandidateCard";
 import { Button } from "@material-ui/core";
 
@@ -27,11 +27,11 @@ const TripDetailsPage = () => {
       tripId={id}
       getTripDetails={getTripDetails}
     />
-  })
+  });
 
   const approvedCandidates = tripDetails && tripDetails.trip && tripDetails.trip.approved.map((candidate) => {
     return <li key={candidate.id}>{candidate.name}</li>
-  })
+  });
 
 
 
@@ -40,16 +40,16 @@ const TripDetailsPage = () => {
     <div>
       <Header />
       <HeaderHomeButton>
-        <Button 
-        variant="contained"
-        color="primary"
-        onClick={() => goToHomePage(history)}>Home</Button>
+        <Button
+          variant="contained"
+          color="primary"
+          onClick={() => goToHomePage(history)}>Home</Button>
       </HeaderHomeButton>
-      <LogoutAndBackPosition> 
-        <Button 
-        variant="contained"
-        color="primary"
-        onClick={() => goToAdminHomePage(history)}
+      <LogoutAndBackPosition>
+        <Button
+          variant="contained"
+          color="primary"
+          onClick={() => goToAdminHomePage(history)}
         >Voltar</Button>
       </LogoutAndBackPosition>
       <TripDetailContainer>
@@ -65,8 +65,8 @@ const TripDetailsPage = () => {
         </TripDetailCard>
       </TripDetailContainer>
       <PendingCandidatesContainer>
-          <h2>Candidatos Pendentes</h2>
-          {candidates && candidates.length > 0 ? candidates : <NoPendingContainer><p>Não há candidatos pendentes</p></NoPendingContainer>}
+        <h2>Candidatos Pendentes</h2>
+        {candidates && candidates.length > 0 ? candidates : <NoPendingContainer><p>Não há candidatos pendentes</p></NoPendingContainer>}
       </PendingCandidatesContainer>
       <ApprovedCandidatesList>
         <h2>Candidatos Aprovados</h2>
@@ -74,6 +74,6 @@ const TripDetailsPage = () => {
       </ApprovedCandidatesList>
     </div>
   );
-}
+};
 
 export default TripDetailsPage;

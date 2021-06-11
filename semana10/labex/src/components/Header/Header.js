@@ -6,6 +6,6 @@ const Header = () => {
         <HeaderContainer>
             <img src={logolabex} alt="Labex - Encontre as melhores viagens espaciais!" />
         </HeaderContainer>
-    )
-}
+    );
+};
 export default Header;

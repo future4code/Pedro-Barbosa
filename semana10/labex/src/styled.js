@@ -1,4 +1,3 @@
-
 import styled, { createGlobalStyle } from 'styled-components';
 import launch from "./assets/launching.jpg"
 import { createMuiTheme } from '@material-ui/core/styles';
@@ -20,7 +19,7 @@ display: flex;
   min-height: 100vh;
   flex-direction: column;
   justify-content: space-between;
-`
+`;
 
 export const theme = createMuiTheme({
   palette: {

@@ -1,14 +1,14 @@
 import React from "react";
 import { useHistory } from 'react-router-dom';
 import useProtectedPage from "../../hooks/useProtectedPage";
-import { goToCreateTripPage, goToLoginPage, goToHomePage, goToTripDetailsPage } from "../../routes/coordinator"
-import Header from "../../components/Header/Header"
+import { goToCreateTripPage, goToLoginPage, goToHomePage, goToTripDetailsPage } from "../../routes/coordinator";
+import Header from "../../components/Header/Header";
 import { HeaderHomeButton, LogoutAndBackPosition, ButtonContainerCentralize } from "../pages-styled";
 import { Title } from "../pages-styled"
-import { TripInfoCard, TripInfoContainer, ButtonSpace, TripListContainer } from "./styled";
+import { TripInfoCard, ButtonSpace, TripListContainer } from "./styled";
 import useRequestData from "../../hooks/useRequestData";
-import axios from "axios"
-import { BASE_URL } from "../../parameters"
+import axios from "axios";
+import { BASE_URL } from "../../parameters";
 import Button from '@material-ui/core/Button';
 
 
@@ -26,7 +26,7 @@ const AdminHomePage = () => {
         getTrips()
       })
       .catch((err) => alert(err.response.data.message))
-  }
+  };
 
   const tripsList = tripsData.trips && tripsData.trips.map((trip) => {
     return (
@@ -53,13 +53,14 @@ const AdminHomePage = () => {
         </ButtonSpace>
       </TripInfoCard>
     )
-  })
+  });
 
   const logout = () => {
     window.localStorage.removeItem('token')
     goToLoginPage(history)
     alert("Você deslogou!")
-  }
+
+  };
 
 
   return (
@@ -91,6 +92,6 @@ const AdminHomePage = () => {
 
     </div>
   );
-}
+};
 
 export default AdminHomePage;

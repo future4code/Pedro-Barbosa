@@ -6,13 +6,13 @@ const useForm = (initialState) => {
     const onChange = (event) => {
         const { name, value } = event.target
         setForm({ ...form, [name]: value })
-    }
+    };
 
     const clear = () => {
         setForm(initialState)
-    }
+    };
 
     return { form, onChange, clear }
-}
+};
 
-export default useForm
+export default useForm;

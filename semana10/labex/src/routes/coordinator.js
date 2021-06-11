@@ -16,8 +16,8 @@ export const goToLoginPage = (history) => {
 
   export const goToTripDetailsPage = (history, id) => {
     history.push(`/admin/trips/${id}`)
-}
+};
 
   export const goToAdminHomePage = (history) => {
     history.push("/admin/trips/list");
-  }
+  };

@@ -1,6 +1,6 @@
-import axios from "axios"
-import { useEffect, useState } from "react"
-import { BASE_URL } from '../parameters'
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { BASE_URL } from '../parameters';
 
 const useRequestData = (endpoint, initialState) => {
     const [data, setData] = useState(initialState)
@@ -11,8 +11,8 @@ const useRequestData = (endpoint, initialState) => {
                 auth: localStorage.getItem("token")
             }
         })
-        .then((res) => setData(res.data))
-        .catch((err) => alert(err.response.data.message))
+            .then((res) => setData(res.data))
+            .catch((err) => alert(err.response.data.message))
     }
 
     useEffect(() => {
@@ -20,6 +20,6 @@ const useRequestData = (endpoint, initialState) => {
     }, [endpoint])
 
     return [data, getData]
-}
+};
 
 export default useRequestData;

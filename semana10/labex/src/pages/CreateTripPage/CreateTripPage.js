@@ -15,7 +15,7 @@ import Button from '@material-ui/core/Button';
 const CreateTripPage = () => {
   useProtectedPage();
   const history = useHistory();
-  const { form, onChange, clear } = useForm({ name: "", planet: "", date: "", description: "", durationInDays: "" })
+  const { form, onChange, clear } = useForm({ name: "", planet: "", date: "", description: "", durationInDays: "" });
 
   const onClickCreate = (event) => {
     event.preventDefault()
@@ -28,12 +28,12 @@ const CreateTripPage = () => {
         clear()
       })
       .catch((err) => alert(err.response.data.message))
-  }
+  };
 
   const today = new Date()
-  const stringToday = ("0" + today.getDate()).substr(-2) + "/" +
-    ("0" + (today.getMonth() + 1)).substr(-2) + "/"
-    + today.getFullYear()
+  const stringToday = today.getFullYear() + "-" +
+    ("0" + (today.getMonth() + 1)).substr(-2) + "-"
+    + ("0" + today.getDate()).substr(-2)
 
 
 
@@ -117,6 +117,6 @@ const CreateTripPage = () => {
       </FormBox>
     </div>
   );
-}
+};
 
 export default CreateTripPage;

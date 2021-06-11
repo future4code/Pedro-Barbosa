@@ -6,7 +6,7 @@ import { useState } from "react";
 import useForm from "../../hooks/useForm";
 import useRequestData from "../../hooks/useRequestData";
 import axios from "axios";
-import { BASE_URL, countries } from "../../parameters"
+import { BASE_URL, countries } from "../../parameters";
 import { FormBox } from "../pages-styled";
 import Button from '@material-ui/core/Button';
 
@@ -33,15 +33,15 @@ const ApplicationFormPage = () => {
             })
             .catch((err) => alert(err.response.message))
 
-    }
+    };
 
     const onChangeTrip = (event) => {
         setTripId(event.target.value)
-    }
+    };
 
     const selectTrips = getTrips.trips && getTrips.trips.map((trip) => {
         return <option key={trip.id} value={trip.id}>{trip.name} - {trip.planet}</option>
-    })
+    });
 
 
 
@@ -54,7 +54,9 @@ const ApplicationFormPage = () => {
                     color="primary"
                     onClick={() => goToHomePage(history)}>Home</Button>
             </HeaderHomeButton>
+            
             <Title>Formulário de inscrição</Title>
+
             <div>
                 <FormBox onSubmit={onClickSendForm}>
                     <select
@@ -135,7 +137,7 @@ const ApplicationFormPage = () => {
                 </FormBox>
             </div>
         </div>
-    )
+    );
 };
 
 export default ApplicationFormPage;

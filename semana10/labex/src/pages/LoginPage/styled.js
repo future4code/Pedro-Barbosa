@@ -19,11 +19,11 @@ input {
     height: 30px;
     width: 80%;
     background: transparent;
-}
+};
 
 input:focus {
     outline: none;
-}
+};
 
 select {
     border-radius: 3px;
@@ -31,9 +31,9 @@ select {
     height: 30px;
     width: 80%;
     background: transparent;
-}
+};
 
 select:focus {
     outline: none;
 }
-`
+`;

@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const FormBoxTrip = styled.form`
 display: flex;
@@ -10,5 +10,5 @@ margin: 30px auto;
 height: 500px;
 border: 1px solid black;
 padding: 20px;
-`
+`;
 

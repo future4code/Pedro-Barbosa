@@ -20,7 +20,7 @@ const HomePage = () => {
             <p><b>Duração: </b>{trip.durationInDays}</p>
             <p><b>Data: </b>{trip.date}</p>
         </TripCard>
-    })
+    });
 
 
 
@@ -52,6 +52,6 @@ const HomePage = () => {
             </ButtonContainerCentralize>
         </div>
     );
-}
+};
 
 export default HomePage;

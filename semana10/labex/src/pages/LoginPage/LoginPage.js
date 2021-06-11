@@ -6,9 +6,9 @@ import { useHistory } from "react-router-dom";
 import { goToHomePage, goToAdminHomePage } from "../../routes/coordinator";
 import Header from "../../components/Header/Header";
 import { HeaderHomeButton } from "../pages-styled";
-import { Title } from "../pages-styled"
+import { Title } from "../pages-styled";
 import { FormBoxLogin } from "./styled";
-import Button from "@material-ui/core/Button"
+import Button from "@material-ui/core/Button";
 
 
 const LoginPage = () => {
@@ -72,6 +72,6 @@ const LoginPage = () => {
 
     </div>
   );
-}
+};
 
 export default LoginPage;
