@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Router from "./routes/Router";
+import GlobalState from "./global/GlobalState";
+import { ThemeProvider } from "@material-ui/core/styles";
+import theme from "./constants/theme";
+import { BrowserRouter } from "react-router-dom";
+import Header from "./components/Header/Header";
+import { GlobalStyle } from "./App-Styled";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <GlobalStyle />
+        <GlobalState>
+          <Header />
+          <Router />
+        </GlobalState>
+      </BrowserRouter>
+    </ThemeProvider>
   );
-}
+};
 
 export default App;
