@@ -1,0 +1,15 @@
+{
+  "name": "exercicios-node",
+  "version": "1.0.0",
+  "description": "exercicios back iniciais",
+  "main": "nameAndAge.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./nameAndAge.js"
+  },
+  "keywords": [
+    "backend"
+  ],
+  "author": "IELSK",
+  "license": "ISC"
+}
