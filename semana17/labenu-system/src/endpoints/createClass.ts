@@ -6,14 +6,14 @@ export const createClass = async (req: Request, res: Response): Promise<void> =>
 
         const { name, startDate, module } = req.body
 
-        if (!name || !startDate || !module) {
+        if (!name || !startDate) {
             res.status(406)
             throw new Error("Preencha todos os campos da requisição!")
         }
 
-        if (module > 7 || module < 1) {
+        if (module > 7 || module < 0) {
             res.status(406)
-            throw new Error("Módulo inválido!")
+            throw new Error("Módulo inválido! Insira um módulo entre 0 e 7.")
         }
 
         const [day, month, year]: string = startDate.split("/")
@@ -29,12 +29,12 @@ export const createClass = async (req: Request, res: Response): Promise<void> =>
                 nome: name,
                 data_inicio: startDateClean,
                 data_final: endDate,
-                modulo: module
+                modulo: module === 0 ? 0 : module
             })
 
-        res.send("Turma criada!").status(201)
+        res.status(201).send("Turma criada!")
 
     } catch (err) {
-        res.status(400).send(err.sqlMessage || err.message)
+        res.send(err.sqlMessage || err.message)
     }
 }
