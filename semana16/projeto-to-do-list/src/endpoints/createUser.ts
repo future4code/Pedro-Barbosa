@@ -18,7 +18,7 @@ export const createUser = async (req: Request, res: Response): Promise<any> => {
                 email
             })
             
-        res.send("Usuário criado!")
+        res.status(201).send("Usuário criado!")
 
     } catch (err) {
         res.send(err.sqlMessage || err.message)

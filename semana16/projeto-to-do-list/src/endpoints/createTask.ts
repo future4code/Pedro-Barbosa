@@ -1,6 +1,5 @@
 import connection from "../connection"
 import { Request, Response } from "express"
-import dayjs from "dayjs"
 
 export const createTask = async (req: Request, res: Response): Promise<any> => {
     try {
@@ -24,9 +23,9 @@ export const createTask = async (req: Request, res: Response): Promise<any> => {
                 creator_user_id: creatorUserId
             })
 
-        res.send("Tarefa criada!")
+        res.status(201).send("Tarefa criada!")
 
     } catch (err) {
-        res.send(err.message)
+        res.send(err.sqlMessage || err.message)
     }
 }

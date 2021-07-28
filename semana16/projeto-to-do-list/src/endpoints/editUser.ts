@@ -24,9 +24,9 @@ export const editUser = async (req: Request, res: Response): Promise<any> => {
         }
 
         res.send("Edição feita com sucesso!")
-        
+
      } 
      catch (err) {
-
+        res.send(err.sqlMessage || err.message)
     }
 }
