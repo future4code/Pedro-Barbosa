@@ -10,6 +10,18 @@ export const createTeacher = async (req: Request, res: Response): Promise<void> 
             throw new Error("Preencha todos os campos da requisição!")
         }
 
+        const resultFilter = await connection("Class")
+        .select()
+        .where({
+            id : classId
+        })
+
+
+          if (!resultFilter[0]) {
+            res.status(404)
+            throw new Error("Turma não encontrada!")
+        }
+
         const [day, month, year]: string = dateBirth.split("/")
 
         const dateBirthClean: Date = new Date(`${year}-${month}-${day}`);
@@ -25,6 +37,6 @@ export const createTeacher = async (req: Request, res: Response): Promise<void> 
         res.status(201).send("Professor(a) criado(a)!")
 
     } catch (err) {
-        res.status(400).send(err.sqlMessage || err.message)
+        res.send(err.sqlMessage || err.message)
     }
 }

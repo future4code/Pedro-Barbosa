@@ -11,6 +11,18 @@ export const addStudentIntoClass = async (req: Request, res: Response): Promise<
             throw new Error("Preencha o campo da requisição!")
         }
 
+        const resultFilter = await connection("Class")
+        .select()
+        .where({
+            id : classId
+        })
+
+
+          if (!resultFilter[0]) {
+            res.status(404)
+            throw new Error("Turma não encontrada!")
+        }
+
         const result = await connection("Student")
             .update({
                 turma_id: classId
