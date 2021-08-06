@@ -7,3 +7,8 @@ export class Product {
     ) {}
 }
 
+export interface ProductRegistration {
+    name: string,
+    description: string,
+    price: number
+};

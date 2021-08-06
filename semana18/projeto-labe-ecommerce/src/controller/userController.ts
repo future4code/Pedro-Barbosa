@@ -1,6 +1,7 @@
 import { Request, Response } from "express"
 import { UserDatabase } from "../data/UserDatabase"
 import { User } from "../model/User"
+import { validateUser } from "../services/userServices"
 
 export const getUsers = async (req: Request, res: Response) => {
     try {
@@ -24,12 +25,14 @@ export const createNewUser = async (req: Request, res: Response) => {
             age: req.body.age as number
         }
 
-        const user = new User(body.id, body.name, body.email, body.age)
-        new UserDatabase().createUser(user)
+        const verifyBody = validateUser(body)
 
-        res.status(201).send({ message: "Novo produto criado", body })
+        if (verifyBody) {
+            const user = new User(body.id, body.name, body.email, body.age)
+            new UserDatabase().createUser(user)
+        }
 
-
+        res.status(201).send({ message: "Novo produto criado", body})
     }
     catch (error) {
         res.status(406).send(error.message || error.sqlMessage)

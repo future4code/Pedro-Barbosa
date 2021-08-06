@@ -7,3 +7,8 @@ export class User {
     ) {}
 };
 
+export interface UserRegistration {
+    name: string,
+    email: string,
+    age: number
+};
