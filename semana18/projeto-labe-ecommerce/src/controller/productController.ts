@@ -31,9 +31,10 @@ export const createNewProduct = async (req: Request, res: Response) => {
         if (verifyBody) {
             const product = new Product(body.id, body.name, body.description, body.price)
             new ProductDatabase().createProduct(product)
+            res.status(201).send({ message: "Produto criado!", body })
         }
 
-        res.status(201).send({ message: "Produto criado!", body })
+        
 
     } catch (error) {
         res.status(406).send(error.message || error.sqlMessage)

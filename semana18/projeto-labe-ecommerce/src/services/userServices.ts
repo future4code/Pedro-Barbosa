@@ -6,7 +6,7 @@ export const validateUser = ({ name, email, age }: UserRegistration) => {
         throw new Error("Preencha todos os campos para fazer o cadastro do usuário!")
     }
 
-    if(name && !age && email){
+    if(name && age && email){
         return true
     }
 

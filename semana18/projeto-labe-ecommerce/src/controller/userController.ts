@@ -30,11 +30,11 @@ export const createNewUser = async (req: Request, res: Response) => {
         if (verifyBody) {
             const user = new User(body.id, body.name, body.email, body.age)
             new UserDatabase().createUser(user)
+            res.status(201).send({ message: "Usuário criado!", body })
         }
 
-        res.status(201).send({ message: "Novo produto criado", body})
-    }
-    catch (error) {
+        
+    } catch (error) {
         res.status(406).send(error.message || error.sqlMessage)
     }
 }
