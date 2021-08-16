@@ -1,4 +1,4 @@
-import { Recipe } from "../model/Recipe"
+import { Recipe, AuthenticationData } from "../model/Recipe"
 import { generateId } from "../services/idGenerator"
 import { Request, Response } from "express"
 import { RecipeDatabase } from "../data/RecipeDatabase"
@@ -12,7 +12,14 @@ export const createNewRecipe = async (req: Request, res: Response): Promise<void
             res.status(401)
             throw new Error("Não autorizado! Faça o login para acessar a ferramenta.")
         }
-        Authenticator.getTokenData(token);
+       
+        const verifiedToken: AuthenticationData | null = Authenticator.getTokenData(token);
+
+        if(!verifiedToken) {
+            res.status(401)
+            throw new Error("Não autorizado! Faça o login para acessar a ferramenta.")
+
+        }
 
         const id = generateId()
         const date: Date = new Date();
@@ -45,7 +52,14 @@ export const getRecipeById = async (req: Request, res: Response): Promise<void> 
             res.status(401)
             throw new Error("Não autorizado! Faça o login para acessar a ferramenta.")
         }
-        Authenticator.getTokenData(token);
+
+        const verifiedToken: AuthenticationData | null = Authenticator.getTokenData(token);
+
+        if(!verifiedToken) {
+            res.status(401)
+            throw new Error("Não autorizado! Faça o login para acessar a ferramenta.")
+
+        }
 
         const recipe: RecipeDatabase = new RecipeDatabase();
         const recipeFilter: any = await recipe.getRecipeById(req.params.id)

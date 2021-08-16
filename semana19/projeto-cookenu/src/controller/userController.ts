@@ -20,7 +20,7 @@ export const signUp = async (req: Request, res: Response): Promise<void> => {
         const user: UserDatabase = new UserDatabase();
         const userFilter = await user.getUserByEmail(body.email)
 
-        if (userFilter) {
+        if (userFilter[0]) {
             res.status(409)
             throw new Error('Esse e-mail já existe!')
         }
@@ -92,6 +92,12 @@ export const getUserProfile = async (req: Request, res: Response): Promise<void>
             throw new Error("Não autorizado! Faça o login para acessar a ferramenta.")
         }
         const verifiedToken: AuthenticationData | null = Authenticator.getTokenData(token);
+
+        if(!verifiedToken) {
+            res.status(401)
+            throw new Error("Não autorizado! Faça o login para acessar a ferramenta.")
+
+        }
     
         const user: UserDatabase = new UserDatabase();
         const userFilter: any = await user.getUserById(verifiedToken?.id)
@@ -112,7 +118,13 @@ export const getAnotherUserProfile = async (req: Request, res: Response): Promis
             res.status(401)
             throw new Error("Não autorizado! Faça o login para acessar a ferramenta.")
         }
-        Authenticator.getTokenData(token);
+        const verifiedToken: AuthenticationData | null = Authenticator.getTokenData(token);
+
+        if(!verifiedToken) {
+            res.status(401)
+            throw new Error("Não autorizado! Faça o login para acessar a ferramenta.")
+
+        }
     
         const user: UserDatabase = new UserDatabase();
         const userFilter: any = await user.getUserById(req.params.id)

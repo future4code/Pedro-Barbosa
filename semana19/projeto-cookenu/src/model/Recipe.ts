@@ -11,3 +11,7 @@ export interface RecipeRegistration {
     title: string,
     description: string
 };
+
+export interface AuthenticationData {
+    id: string; 
+}
