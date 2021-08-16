@@ -1,0 +1,30 @@
+###
+# @name login
+POST http://localhost:3003/login
+Content-Type: application/json
+
+{
+    "email": "pedro@gmail.com",
+    "password": "123456"
+}
+
+###
+
+http://localhost:3003/user/profile
+Authorization: {{login.response.body.token}}
+
+###
+
+POST http://localhost:3003/recipe
+Content-Type: application/json
+Authorization: {{login.response.body.token}}
+
+{
+    "title": "Lalatina",
+    "description": "dasasasasasasasasasasasasasasas"
+}
+
+###
+http://localhost:3003/recipe/91638d0b-2daf-4c76-9ff5-09c1b262763
+Authorization: {{login.response.body.token}}
+
